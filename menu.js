@@ -108,5 +108,10 @@ app.on("ready", () => {
   });
 });
 
+template.push({
+  label: app.name,
+  submenu: [{ label: app.getVersion() }, { type: 'separator' }, { role: 'quit' }]
+});
+
 const menu = Menu.buildFromTemplate(template);
 module.exports = menu;
