@@ -70,7 +70,7 @@ ipcMain.on("save", (event, arg) => {
   });
 });
 
-function loadFile(){
+function loadFile() {
   const window = BrowserWindow.getFocusedWindow();
 
   const options = {
@@ -91,7 +91,7 @@ function loadFile(){
   });
 }
 
-function saveFile(){
+function saveFile() {
   console.log("Saving the file");
   const window = BrowserWindow.getFocusedWindow();
 
